@@ -22,7 +22,13 @@ public class Ingredient {
     public Ingredient() {
     }
 
-    public Ingredient(String description, BigDecimal amount, Unit_of_Measure uom,Recipe recipe) {
+    public Ingredient(String description, BigDecimal amount, Unit_of_Measure uom) {
+        this.description = description;
+        this.amount = amount;
+        this.uom = uom;
+    }
+
+    public Ingredient(String description, BigDecimal amount, Unit_of_Measure uom, Recipe recipe) {
         this.description = description;
         this.amount = amount;
         this.recipe = recipe;
